@@ -1,3 +1,5 @@
+
+print("SCRAPPY")
 my_string = "aaAAa vVVvv bBBbb sSSsss lLll"
 book = "books/frankenstein.txt"
 
@@ -11,4 +13,6 @@ for letter in my_string.lower():
 for k,v in counter.items():
     print(f"{k} -- {v}")
 
+
+print("#### --END-- ###")
 
