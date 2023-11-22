@@ -1,11 +1,22 @@
 def median(data):
     N = len(sorted(data))
-    if N%2==1:
+    if not N:
+        return None
+    elif N%2==1:
         return data[N//2]
     else:
-        return "even"
+        a = data[N//2-1]
+        b = data[N//2]
+        return (a+b)/2
 
 
-my_list = [15,1,2,3,4,14,5,6,7,8,9,10,11,12,13]
 
-print(median(my_list))
+l1 = [8, 8, 8] # 8,
+l2 = [14, 18, 22, 30] # 20.0
+l3 = [6, 6, 6, 24, 24, 24] #15.0
+l4 = [] #None
+
+print(median(l1))
+print(median(l2))
+print(median(l3))
+print(median(l4))
